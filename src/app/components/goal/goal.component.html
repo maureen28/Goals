@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>My goals</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let i = index'>
+        <app-goal-detail [goal]='goals' (isComplete)='deleteGoal($event,i)'>
+        </app-goal-detail>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-goal-form></app-goal-form>
+    </div>
+  </div>
+  <p *ngIf="goals.length > 5">You have too many goals</p>
+</div>
