@@ -1,6 +1,25 @@
 # Goal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+## Author: Maureen Wairimu.
+
+## Technology
+<ol>
+<li>Angular CLI</li>
+<li>Typescript</li>
+<li>HTML & CSS (Bootstrap)</li>
+</ol>
+> This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+
+## Setup Installation and Instruction
+<ul>
+<li>Clone this repository to a location in your file system.</li>
+<li>Open terminal command line then navigate to the root folder of the application.</li>
+<li>Run `ng serve` command.</li>
+<li>Navigate to http://localhost:4200/ in your browser.</li>
+</ul>
+
+## Live link : https://maureen28.github.io/Goals/
+
 
 ## Development server
 
@@ -25,3 +44,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Contact Information
+To get in touch E-MAIL me on nimz69509@gmail.com
+
+## License
+MIT License
+<b>Copyright (c) 2020 maureen28<b>

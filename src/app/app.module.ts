@@ -9,7 +9,6 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
   declarations: [
     AppComponent,
     GoalFormComponent,
-    
   ],
   imports: [
     BrowserModule,
