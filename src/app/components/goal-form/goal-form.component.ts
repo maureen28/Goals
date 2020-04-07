@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Goal } from '../goal';
+import { Component, OnInit, Output, EventEmitter  } from '@angular/core';
+import { Goal } from 'src/app/goal';
+
 @Component({
   selector: 'app-goal-form',
   templateUrl: './goal-form.component.html',
@@ -12,7 +13,6 @@ export class GoalFormComponent implements OnInit {
   submitGoal() {
     this.addGoal.emit(this.newGoal);
   }
-
   constructor() { }
 
   ngOnInit(): void {

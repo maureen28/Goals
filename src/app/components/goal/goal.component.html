@@ -1,15 +1,22 @@
 <div class="container">
+  <ng-progress></ng-progress>
   <h2>My goals</h2>
   <div class="row">
-    <div class="col-md-6">
-      <div *ngFor='let i = index'>
-        <app-goal-detail [goal]='goals' (isComplete)='deleteGoal($event,i)'>
-        </app-goal-detail>
+    <div class="col-md-6 mb-3">
+      <div *ngFor='let goal of goals;let i = index'>
+        <app-goal-details [goal]='goal' (isComplete)='deleteGoal($event, i)'>
+        </app-goal-details>
       </div>
     </div>
     <div class="col-md-6">
-      <app-goal-form></app-goal-form>
+      <app-goal-form (addGoal)='addNewGoal($event)'></app-goal-form>
     </div>
   </div>
   <p *ngIf="goals.length > 5">You have too many goals</p>
+  <div class="row text-center">
+    <blockquote class="blockquote">
+      <p class="mb-3">{{quote.quote}}</p>
+      <footer class="blockquote-footer"><cite>{{quote.author}}</cite></footer>
+    </blockquote>
+  </div>
 </div>
