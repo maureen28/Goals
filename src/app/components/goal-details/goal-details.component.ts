@@ -20,7 +20,7 @@ export class GoalDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.goal = this.service.getGoal(id);
+    // this.goal = this.service.getGoal(id);
   }
 
 }

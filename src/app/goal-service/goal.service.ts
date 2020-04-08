@@ -10,13 +10,13 @@ export class GoalService {
     return Goal;
   }
 
-  getGoal(id) {
-    for (const goal of Goal) {
-      if (goal.id === id) {
-        return goal;
-      }
-    }
-  }
+  // getGoal(id) {
+  //   for (const goal of Goal) {
+  //     if (goal.id === id) {
+  //       return goal;
+  //     }
+  //   }
+  // }
 
   constructor() { }
 }
