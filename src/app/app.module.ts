@@ -12,6 +12,9 @@ import { GoalComponent } from './components/goal/goal.component';
 import { GoalDetailsComponent } from './components/goal-details/goal-details.component';
 import { DateCountPipe } from './date-count.pipe';
 import { from } from 'rxjs';
+import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { from } from 'rxjs';
     GoalComponent,
     GoalDetailsComponent,
     DateCountPipe,
+    AboutComponent,
+    NavbarComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

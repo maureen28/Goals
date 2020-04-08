@@ -5,6 +5,7 @@ import { Goal } from 'src/app/goal';
 import { AlertService } from 'src/app/alert-service/alert.service';
 import { HttpClient } from '@angular/common/http';
 import { Quote } from 'src/app/quote-class/quote';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,6 +17,10 @@ export class GoalComponent implements OnInit {
   goals: Goal[];
   alertService: AlertService;
   quote: Quote;
+
+  goToUrl(id) {
+    this.router.navigate(['goals', id]);
+  }
 
   deleteGoal(isComplete, index) {
     if (isComplete) {
@@ -33,7 +38,8 @@ export class GoalComponent implements OnInit {
     goal.completeDate = new Date(goal.completeDate);
     this.goals.push(goal);
   }
-  constructor(goalService: GoalService, alertService: AlertService, private http: HttpClient, private quoteService: QuoteRequestService) {
+  constructor(goalService: GoalService, alertService: AlertService,
+              private http: HttpClient, private quoteService: QuoteRequestService, private router: Router) {
     this.goals = goalService.getGoals();
     this.alertService = alertService;
    }
